@@ -1,0 +1,175 @@
+---
+title: "warmup01-kyle-mcevoy"
+author: "Kyle McEvoy"
+date: "February 2, 2019"
+output: github_document
+---
+
+# **Obi-Wan Kenobi**
+
+![](https://vignette.wikia.nocookie.net/starwars/images/4/4e/ObiWanHS-SWE.jpg/revision/latest?cb=20111115052816)  
+
+
+\
+\
+\
+
+Obi-Wan Kenobi was a jedi master.  He trained his apprentices Anakin Skywalker and Luke Skywalker in the ways of the jedi. Following the betrayal of Anakin Skywalker, he went into hiding, eventually ending up on Tatooine.  This is where Luke Skywalker first encounters him.\
+
+Acting as Luke's guide and teaching him to use the Force, Kenobi is instrumental in the eventual destruction of the Death Star and the defeat of the Empire.
+
+| Characteristic | Value |
+| --- | --- |
+| Species | Human |
+| Gender | Male |
+| Eye Color | Blue |
+| Profession | Jedi Master |
+| Allegiance | Rebellion |
+  
+\
+\
+While mentally manipulating Storm Troopers with his force powers Obi-Wan Kenobi said: 
+
+> *These* aren't the droids you're looking for.  
+
+He is also responsible for one of the more memorable quotes in the movie Star Wars, shortly before his charater is killed:
+
+> If you strike me down, I shall become more powerful than you can possible imagine
+
+ -Obi-Wan Kenobi
+
+He later proved the truth in his statement.  By telepathically communicating to Luke Skywalker from beyond the grave, he encourages him to trust in the force.  Following Kenobi's wisdom, Luke is able to hit the miniscule exhaust pipe with a torpedo, destroying the Death Star.
+
+\
+\
+Image and information from [Wookiepedia](https://starwars.fandom.com/wiki/Obi-Wan_Kenobi)
+
+
+****************************************
+
+
+# **Foolproof Cacio e Pepe**
+
+![](https://farm2.staticflickr.com/1873/43732599584_499eab8694_z.jpg)  
+
+Recipe and instructions from [Smitten Kitchen](https://smittenkitchen.com/2018/09/foolproof-cacio-e-pepe/)
+
+### **Ingredients**
+
+- 8 oz. of Dried Pasta especially one of:
+    - Spaghetti Alla Chittara
+    - Tonarelli
+    - Regular Spaghetti, in a pinch 
+- 4 oz. Pecorino Romano
+- A *lot* of Freshly Ground Black Pepper -- Hard to gauge the exact amount, Elizabeth Minchilli, the author of the article used 46 (Oh my!) grinds of the pepper mill.
+- Salt, a light amount for salting the pasta water
+- Reserved *Starchy* Pasta-water
+
+### **Specialty Kitchen Equiment**
+
+- Immersion Blender
+- Alternately, a food processor\
+
+This equipment will be used to combine the cheese and ground pepper with water to form a thick paste.  Crucial!
+
+### **Steps**
+
+1. Salt water and bring it to a boil.
+
+2. While water is boiling, prepare all the ingredients, since time is of the essence, make sure everything is prepared before you start cooking the pasta!
+
+3. Add pasta to water.  You will be cooking it to just shy of al dente, or whatever your preference for pasta bite.
+
+4. While the pasta is cooking, reserve a tiny bit of pecorino for garnish.  Then add the rest with the ground black pepper to a bowl.  Add cold water one tablespoon at a time, while using an immersion blender to combine.  This shouldn't take more than 4 or 5 tablespoons of water to get the right consistency.
+
+5. Reserve starchy cooking water before the pasta is finished cooking. Then drain the pasta in a colander and quickly dump into your serving bowl while it is still hot.
+
+6. Toss 3/4 of the paste into the pasta in dollops and mix lightly.  Once it starts to melt, add a splash of your pasta water and keep stirring to get it to form a sticky coating sauce.
+
+7. Finish and serve with garnish.
+
+8. **Enjoy!** :) \
+
+\
+\
+
+
+
+This is the traditional Roman-style Cacio e Pepe recipe.  Non-traditional variations would expand the list of ingredients beyond the three core ingredients of pasta, pecorino and black pepper.
+
+Common variations include adding butter or cream to improve the emulsification of the mixture of starchy water and cheese.  Some people also try using corn starch or flour as thickening agents.
+
+This pasta can be enjoyed as a snack or a meal at any time of day in any season!
+
+
+***************************************
+
+# **Euclidean Distance**
+
+Text replicated from [Wikipedia.org](https://en.wikipedia.org/wiki/Euclidean_distance)  
+
+
+
+## **Definition**
+_________________________
+
+The **Euclidean distance** between points **p** and **q** is the length of the line segment connecting them $(\mathbf{\overline{pq}})$.  
+\
+In Cartesian coordinates, if $\mathbf{p} = (p_1,p_2,\ldots,p_n)$ and $\mathbf{q} = (q_1,q_2,\ldots,q_n)$ are two points in Euclidean *n*-space, then the distance (d) from **p** to **q**, or from **q** to **p** is given by the Pythagorean formula:
+
+
+
+\begin{align}  
+d(\mathbf{p},\mathbf{q}) = d(\mathbf{q},\mathbf{p}) &= \sqrt{(q_1 - p_1)^2 + (q_2 - p_2)^2 + \cdots + (q_n - p_n)^2}\\
+\\
+&= \sqrt{\sum\limits_{i=1}^n(q_i - p_i)^2} . \label{(1)}  
+
+
+\end{align}
+
+
+The position of a point in a Euclidean *n*-space is a Euclidean vector. So, **p** and **q** may be represented as Euclidean vectors, starting from the origin of the space (initial point) with their tips (terminal points) ending at the two points. The Euclidean norm, or **Euclidean length** or **magnitude** of a vector measure the length of the vector:  
+
+\begin{align}
+
+\| \mathbf{p} \| = \sqrt{p_1^2 + p_2^2 + \cdots + p_n^2}= \sqrt{\mathbf{p}\cdot\mathbf{p}} \ ,
+
+
+\end{align}
+
+where the last expression involves the dot product.
+
+Describing a vector as a directed line segment from the origin of the Euclidean space (vector tail), to a point in that space (vector tip), its length is actually the distance from its tail to its tip.  The Euclidean norm of a vector is seen to be just the euclidean distance between its tail and its tip.\
+\
+The relationship between points **p** and **q** may involve a direction (for example, from **p** to **q**), so when it does, this relationship can itself be represented by a vector, given by
+
+\begin{align}
+
+\mathbf{q}-\mathbf{p} = (q_1 - p_1, q_2 - p_2, \cdots, q_n - p_n) \ .
+
+\end{align}
+
+In a two- or three-dimensional space (*n*=2,3) this can be visually represented as an arrow from **P** to **q**. In any space it can be regarded as the position of **q** relative to **p**.  It may also be called a displacement vector if **p** and **q** represent two positions of some moving point.\
+\
+The Euclidean distance between **p** and **q** is just the Euclidean length of this displacement vector:
+
+\begin{align}
+
+\|\mathbf{q}-\mathbf{p}\| = \sqrt{(\mathbf{q}-\mathbf{p}) \cdot (\mathbf{q}-\mathbf{p})} \ \ ,
+\end{align}
+
+which is equivalent to equation 1, and also to:  
+  
+
+\begin{align}
+
+\| \mathbf{q} - \mathbf{p} \| = \sqrt{ \| \mathbf{p} \| ^2 + \| \mathbf{q} \| ^2 - 2\mathbf{p}\cdot \mathbf{q}} \ \  .
+
+
+\end{align}
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
