@@ -1,4 +1,4 @@
-#Data Dictionary for workout01/data/shots-data.csv
+# Data Dictionary for workout01/data/shots-data.csv
 
 Dataset derived from 5 individual player data .csv files contained in the data folder of workout01. Dataset created using the script make-shots-data-script.R in workout01/code directory.
 
