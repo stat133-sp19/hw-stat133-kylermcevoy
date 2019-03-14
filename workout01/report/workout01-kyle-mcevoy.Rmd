@@ -159,6 +159,8 @@ Looking at this chart it looks like we could be onto something.  Klay Thompson a
 knitr::include_graphics('../images/steph-smiling.jpg')
 ```
   
+Image credit.^8^  
+
 So maybe there's a more effective way to measure shooting ability.  What if we weighted by the points scored per shot?  That is what if we counted each made three-point shot as 1.5 shots made compared to two-point shots, and then normalized to total number of shots taken.  
 
   
@@ -220,6 +222,8 @@ From this chart you can see that Draymond leads the team in assists. He may not 
 knitr::include_graphics('../images/draymond-yup.jpg')
 ```
   
+Image credit.^9^  
+  
 ## Conclusion:  
   
 There is a lot more to having a succesful offense than just having players with high percentages take the most shots. It appears that succesful offenses benefit from having players that are effective at distinct but complementary skills. Draymond's passing benefits his teammates providing a boost to the offense, even considering his lower shooting percentages. Curry and Klay have special abilities shooting threes, and the increased value of the three-point shot more than outweighs the negative effects it has on lower overall shooting percentage. Durant's all-around ability make him highly important to the team. He has the highest adjusted shooting percentage, and the third most assists, despite missing nearly a quarter of the season.  
@@ -256,5 +260,11 @@ There are multiple ways to be a successful contributor to good offense in the NB
 	On 2019/03/09.
 	
 7.  R Core Team (2018). R: A language and environment for statistical computing. R Foundation for  
-  Statistical Computing, Vienna, Austria. <https://www.R-project.org/>.  
+  Statistical Computing, Vienna, Austria. <https://www.R-project.org/>. 
+  
+8. Image downloaded from <http://a.espncdn.com/photo/2017/0424/r202865_608x342_16-9.jpg> 
+  On 2019/03/09.
+  
+9. Image originally posted on <http://blacksportsonline.com>. No longer on the website. Downloaded from  
+  <https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.tgHoSmC-_6O9EmQcEJrqIAHaHQ%26pid%3D15.1&f=1> on 2019/03/09.
 
