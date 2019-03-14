@@ -177,6 +177,8 @@ Looking at this chart it looks like we could be onto something. Klay Thompson an
 
 <img src="../images/steph-smiling.jpg" width="60%" height="60%" style="display: block; margin: auto;" />
 
+Image credit.<sup>8</sup>
+
 So maybe there's a more effective way to measure shooting ability. What if we weighted by the points scored per shot? That is what if we counted each made three-point shot as 1.5 shots made compared to two-point shots, and then normalized to total number of shots taken.
 
 ``` r
@@ -233,6 +235,8 @@ From this chart you can see that Draymond leads the team in assists. He may not 
 
 <img src="../images/draymond-yup.jpg" width="60%" height="60%" style="display: block; margin: auto;" />
 
+Image credit.<sup>9</sup>
+
 Conclusion:
 -----------
 
@@ -271,3 +275,8 @@ References:
 
 7.  R Core Team (2018). R: A language and environment for statistical computing. R Foundation for
     Statistical Computing, Vienna, Austria. <https://www.R-project.org/>.
+
+8.  Image downloaded from <http://a.espncdn.com/photo/2017/0424/r202865_608x342_16-9.jpg> On 2019/03/09.
+
+9.  Image originally posted on <http://blacksportsonline.com>. No longer on the website. Downloaded from
+    <https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.tgHoSmC-_6O9EmQcEJrqIAHaHQ%26pid%3D15.1&f=1> on 2019/03/09.
