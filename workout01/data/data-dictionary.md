@@ -34,5 +34,5 @@ Takes integer values from 0 to 71.  Mean of 15.58.
 **minute**:  The minute of the game when the shot was taken from the first minute to minute 48. Integer values.  
 
 **player**: Character variable.  The name of the player taking the shot.  
-	+ In this data set, there are five players "Stephen Curry", "Kevin Durant", "Klay Thompson", "Andre Iguodala" and "Draymond Green"  
+* In this data set, there are five players "Stephen Curry", "Kevin Durant", "Klay Thompson", "Andre Iguodala" and "Draymond Green"  
 	
