@@ -4,6 +4,7 @@
 #input(s): Requires five .csv files located in the data directory of the workout1 directory.
 #output(s): .csv file shots-data.csv containing the shot chart data for the five players.  Also a text file
 #shots-data-summary.txt containing the summary function output of the new data set.
+##IMPORTANT: Please set working directory to workout01 directory before running code.
 
 library(dplyr)
 library(readr)

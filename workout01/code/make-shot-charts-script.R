@@ -3,6 +3,7 @@
 #Purpose: To create shot charts for 5 NBA players using shot-chart dataset from the 2016-2017 nba season
 #Input(s): shots-data.csv, found in "workout01/data" directory, "nba-court.jpg" in "workout01/images" directory
 #Output(s): Shotcharts for the Curry, Durant, Klay, Draymond and Iguodala
+#IMPORTANT: Please set working directory to workout01 directory before running code.
 
 library(jpeg)
 library(grid)
