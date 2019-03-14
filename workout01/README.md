@@ -2,7 +2,7 @@
 
 **Author**: Kyle McEvoy, student in Stat 133, Spring 2019 semester
 
-**Date**: 03/09/2019
+**Date**: 03/13/2019
 
 **Project**: To prepare NBA shot chart data from the 2016-2017 NBA season for 5  
 Golden State Warriors players, to analyze that data and create a narrative and  
@@ -27,11 +27,13 @@ Output and images files will be located in those respective directories.
 **IMPORTANT**: All file paths in code scripts are specified relative to the working directory being set to the workout01 parent directory.
 All file paths in report .rmd file are set to use workout01/report as the working directory.
 
-Please use setwd() function to set the working directory to workout01 before running any code in this project.
+Please use setwd() function to set the working directory to workout01 before running any code scripts in this project.
+And please set working directory to workout01/report for running the report Rmd file.
 
 **Sources**: All data downloaded from the Spring 2019 Stat 133 Github repository located at:
 <https://github.com/ucb-stat133/stat133-spring-2019>  
-Raw data files used found in the data directory.  
+Raw data files used found in the data directory.
+Website references found in the report.
 
 
 
