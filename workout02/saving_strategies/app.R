@@ -111,8 +111,7 @@ server <- function(input, output) {
     return(contrib * (((1 + rate)^years) - ((1 + growth)^ years))/(rate - growth))
   }
   
-  
-  output$balances <- DT::renderDataTable({
+  modalities <- reactive({
     
     modalities <- tibble(
       year = 0:input$years,
@@ -127,24 +126,19 @@ server <- function(input, output) {
     }  
     
     
-    modalities })
+    return(modalities)
+  })
+  
+  
+  output$balances <- DT::renderDataTable({
+  
+    modalities () })
    
   
   
    output$timelinePlot <- renderPlot({
-     
-     modalities <- tibble(
-       year = 0:input$years,
-       no_contrib = rep(0, input$years + 1),
-       fixed_contrib = rep(0, input$years + 1),
-       growing_contrib = rep(0, input$years + 1))
-     
-     for (i in 0:input$years) {
-       modalities$no_contrib[i + 1] <- future_value(amount = input$amount, rate = input$rate / 100, years = i)
-       modalities$fixed_contrib[i + 1] <- modalities$no_contrib[i + 1] + annuity(contrib = input$contrib, rate = input$rate / 100, years = i)
-       modalities$growing_contrib[i + 1] <- modalities$no_contrib[i + 1] + growing_annuity(contrib = input$contrib, rate = input$rate / 100, growth = input$growth / 100, years = i)
-     }  
-     narrow_modalities <- modalities %>%
+    
+     narrow_modalities <- modalities() %>%
        gather(key = "investment_strategy", value = "investment_value", -year)
      
      narrow_modalities$investment_strategy <- factor(narrow_modalities$investment_strategy, levels = c("no_contrib", "fixed_contrib", "growing_contrib"))
