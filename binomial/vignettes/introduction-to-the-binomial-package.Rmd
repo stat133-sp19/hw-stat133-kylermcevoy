@@ -1,0 +1,142 @@
+---
+title: "Introduction to the Binomial Package"
+author: "Kyle McEvoy"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+library(binomial)
+```
+
+# Introduction to the Binomial Package
+
+This package contains many functions that relate to working with the distribution of a Binomial Random Variable. The binomial distribution is defined by two parameters, the number of trials and the probability of success on each trial. This distribution has summary measures that relay information about the shape and structure of the distribution, and the aim of this package is to provide convenient functions for describing the distribution and providing probability values and data frames.
+
+There are two main categories of functions in this package relating to the binomial distribution. Probability functions and summary measure functions.
+  
+## Probability Mass Functions  
+
+These functions relate to calculating the probability of the number of successes from a specified binomial distribution with parameters trials (trials) and probability (prob).  
+
+### bin_choose()
+
+The first such function is bin_choose(). bin_choose takes an input of n and k and returns the choose function defined as $$\frac{n!}{(n-k)!k!}$$. This function provides weights to the different terms in the probability mass function of the binomial distribution, describing the number of ways that that number of successes (k) could be arranged in the total number of trials (n). Both n and k must be non-negative integer values of either integer or double type, and k cannot be larger than n.  
+
+```{r}
+bin_choose(n = 10, k = 10)
+
+bin_choose(n = 5, k = 1:3)
+
+bin_choose(20, 17)
+
+
+```
+  
+This function will provide an error if k is larger than n.  
+
+### bin_probability()
+
+The next function is bin_probability. This function takes inputs of trials, prob, and success, and calculates the Probability Mass Function (PMF) of the binomial distribution for the specified parameters and the given number of successes. Success must be between 0 and trials. While trials and prob must follow the rules for each of those parameters in the binomial distribution. Trials must be a non-negative integer and prob must be a numeric value between 0 and 1 inclusive.  
+
+```{r}
+bin_probability(success = 10, trials = 20, prob = 0.5)
+
+bin_probability(1:5, trials = 10, prob = 0.35)
+```
+  
+This function will call an error if prob has values outside of 0 and 1 and if success is greater than trials, or if trials or success are not non-negative integers.  
+  
+### bin_distribution()
+
+This function takes an input of trials and prob and returns a data.frame with a column for successes and a column with the calculated probabilities for each number of successes from 0 to the number of trials specified. This data.frame has extra S3 class "bindis". This functions calls bin_probability() to calculate probabilities.
+  
+```{r}
+
+bindis_test <- bin_distribution(trials = 6, prob = 0.5)
+
+bindis_test
+
+```
+
+Note that class bindis has its own specified plotting method producing a standardized bar chart of the probability distribution. An example is shown below.
+
+```{r}
+
+plot(bindis_test)
+
+```
+
+### bin_cumulative()
+
+bin_cumulative works similary to bin_distribution() but in addition to columns for successes and probability of observing that number of successes, it also includes a column for the cumulative probability from 0 to that number of successes.
+
+```{r}
+
+bincum_test <- bin_cumulative(trials = 6, prob = 0.5)
+
+bincum_test
+
+```
+
+
+This function also calls bin_probability() to calculate probabilities. And it also includes a plotting method!  
+```{r}
+
+plot(bincum_test)
+
+```
+
+This plot shows the cumulative distribution of the probability for less than or equal that number of successes.
+
+Lastly for these overarching functions:
+
+## Summary Measures
+
+### bin_variable()
+
+This functions stores the parameter information for a binomial Random Variable.
+
+```{r}
+
+binvar_test <- bin_variable(trials = 10, prob = 0.6)
+
+binvar_test
+
+```
+
+As you can see it has its own S3 method for printing of the class binvar.
+
+```{r}
+
+summary(binvar_test)
+
+```
+
+As well as S3 methods for summary statistics and the printing of those summary statistics.
+
+This package also includes functions that return the various measures of the specified binomial distribution for the given parameters. These include bin_mean(), bin_variance(), bin_mode(), bin_kurtosis(), bin_skewness()
+
+```{r}
+
+bin_mean(10, 0.6)
+bin_variance(10, 0.6)
+bin_mode(10, 0.6)
+bin_skewness(10, 0.6)
+bin_kurtosis(10, 0.6)
+
+
+```
+
+As you can see these functions return the same values produced in the Summary of the binvar class.
+
+Hopefully this tutorial helped you understand how to use the binomial package! Enjoy! See the README.md and DESCRIPTION files for more about the project and author/maintainer.
